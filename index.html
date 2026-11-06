@@ -1,1 +1,44 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101018">
+<title>KING SKY — Results & Number Archive</title>
+<style>
+:root{--bg:#0b0b12;--panel:#151521;--panel2:#1d1d2b;--gold:#f5c451;--muted:#a8a8b8;--line:#303044;--red:#ff5c66}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#29213a 0,#0b0b12 42%);color:#f7f5fb;font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial}
+.wrap{max-width:980px;margin:auto;padding:18px}.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0 20px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:2px;font-size:22px}.crown{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#ffe18a,#bd8120);color:#201506;font-size:23px}
+.badge{font-size:11px;color:#1a160b;background:var(--gold);padding:5px 9px;border-radius:30px;font-weight:800;letter-spacing:.7px}
+nav{display:flex;gap:8px;overflow:auto;padding-bottom:15px}nav a{white-space:nowrap;color:#d6d3e1;text-decoration:none;padding:9px 13px;border:1px solid var(--line);border-radius:10px;font-size:13px}nav a:first-child{background:var(--gold);color:#1b1609;border-color:var(--gold);font-weight:800}
+.hero{padding:26px 22px;border:1px solid #4a3b28;border-radius:20px;background:linear-gradient(115deg,#292034,#171622 65%,#342719);box-shadow:0 18px 55px #0005}
+.eyebrow{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:2px}.hero h1{font-size:clamp(28px,6vw,46px);line-height:1.08;margin:9px 0}.hero p{color:#c5c0d0;max-width:620px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:17px 0}.stat,.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:17px}.stat small,.muted{color:var(--muted)}.stat strong{display:block;font-size:22px;margin-top:5px}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:25px 2px 12px}.section-head h2{font-size:19px;margin:0}.tag{color:var(--gold);font-size:11px;border:1px solid #69552d;border-radius:20px;padding:4px 8px}
+.results{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.result{background:linear-gradient(145deg,#1b1b2a,#13131d);border:1px solid var(--line);border-radius:14px;padding:15px;display:flex;align-items:center;justify-content:space-between;gap:12px}.result b{font-size:16px}.number{font-size:25px;font-weight:900;color:var(--gold);letter-spacing:2px}.empty{grid-column:1/-1;text-align:center;padding:24px;color:var(--muted)}
+.notice{margin-top:18px;padding:14px 16px;border:1px solid #6b4d2c;background:#211b17;border-radius:13px;color:#d8c9b3;font-size:12px}.notice b{color:var(--gold)}
+footer{border-top:1px solid var(--line);margin-top:28px;padding:20px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+@media(max-width:620px){.wrap{padding:14px}.grid{grid-template-columns:1fr}.results{grid-template-columns:1fr}.hero{padding:22px 18px}.brand{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand"><div class="crown">♛</div><span>KING SKY</span></div><span class="badge">OFFICIAL WEBSITE</span></header>
+<nav aria-label="Main navigation"><a href="#home">Home</a><a href="#results">Results</a><a href="#archive">Number Archive</a><a href="#about">About</a></nav>
+<main id="home">
+<section class="hero"><div class="eyebrow">WELCOME TO KING SKY</div><h1>Results. Records.<br><span style="color:var(--gold)">Clarity.</span></h1><p>A clean, mobile-friendly information page for viewing published result records and browsing the archive.</p></section>
+<section class="grid" aria-label="Site summary"><div class="stat"><small>Latest update</small><strong>Not published</strong></div><div class="stat"><small>Result categories</small><strong>Coming soon</strong></div><div class="stat"><small>Archive</small><strong>Being prepared</strong></div></section>
+<div class="section-head" id="results"><h2>Latest Results</h2><span class="tag">LIVE BOARD</span></div>
+<section class="results"><div class="empty card">No verified results have been published yet.<br><span class="muted">Please check back after an official update.</span></div></section>
+<div class="section-head" id="archive"><h2>Previous Results</h2><span class="tag">ARCHIVE</span></div>
+<section class="card muted">The date-wise archive will appear here when records are added and verified.</section>
+<div class="notice"><b>Important:</b> KING SKY is an informational demo website. It does not accept bets, deposits, payments, or withdrawals and does not provide gambling services. Any result information should be independently verified and must comply with local laws.</div>
+<section id="about" class="section-head"><h2>About KING SKY</h2></section>
+<section class="card muted">KING SKY is being built as a simple, accessible place to view published information. Contact and ownership details can be added here.</section>
+</main>
+<footer><span>© <span id="year"></span> KING SKY</span><span>Made for clear information · kingsky.in</span></footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
